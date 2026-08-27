@@ -103,3 +103,4 @@ def log_call(func_name, *args, **kwargs):
 
 result = log_call("calculate", 10, 20, operation="sum", verbose=True)
 print(result)
+

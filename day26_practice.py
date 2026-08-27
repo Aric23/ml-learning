@@ -80,7 +80,7 @@ print("\n4. Визуализация траектории")
 X = np.random.randn(100, 1) * 10
 y = 3 * X + 2 + np.random.randn(100, 1)
 X, Y = np.meshgrid(X, y)
-Z = np.mean(Y - (X * w_history + b_history)**2)
+Z = (1/len(X))
 print(Z.shape)
 plt.figure(figsize=(10,10))
 new_lost = loss_history
